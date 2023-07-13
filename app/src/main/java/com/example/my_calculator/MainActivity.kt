@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    // Represent whether the lastly pressed key is numeric or not
+    // Represent whether the lastly pressed key is numeric or not.
     var lastNumeric: Boolean = false
 
     // If true, do not allow to add another DOT
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * Append . to the TextView
+     * Append . to the TextView.
      */
     fun onDecimalPoint(view: View) {
 
