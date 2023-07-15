@@ -63,14 +63,14 @@ class MainActivity : AppCompatActivity() {
      * Calculate the output
      */
     fun onEqual(view: View) {
-        // If the last input is a number only, solution can be found
+        // If the last input is a number only, solution can be found...
         if (lastNumeric) {
             // Read the textView value
             var tvValue = tvInput?.text.toString()
             var prefix = ""
             try {
 
-                // Here if the value starts with '-' then we will separate it and perform the calculation with value.
+                // Here if the value starts with '-' then we will separate it and perform the calculation with value...
                 if (tvValue.startsWith("-")) {
                     prefix = "-"
                     tvValue = tvValue.substring(1);
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                         var one = splitedValue[0] // Value One
                         val two = splitedValue[1] // Value Two
 
-                        if (prefix.isNotEmpty()) { // If the prefix is not empty then we will append it with first value i.e one
+                        if (prefix.isNotEmpty()) { // If the prefix is not empty then we will append it with first value i.e one...
                             one = prefix + one
                         }
 
