@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
      * Calculate the output
      */
     fun onEqual(view: View) {
-        // If the last input is a number only, solution can be found.
+        // If the last input is a number only, solution can be found
         if (lastNumeric) {
             // Read the textView value
             var tvValue = tvInput?.text.toString()
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                         var one = splitedValue[0] // Value One
                         val two = splitedValue[1] // Value Two
 
-                        if (prefix.isNotEmpty()) { // If the prefix is not empty then we will append it with first value i.e one.
+                        if (prefix.isNotEmpty()) { // If the prefix is not empty then we will append it with first value i.e one
                             one = prefix + one
                         }
 
@@ -106,7 +106,6 @@ class MainActivity : AppCompatActivity() {
                         if (prefix.isNotEmpty()) { // If the prefix is not empty then we will append it with first value i.e one.
                             one = prefix + one
                         }
-
                         /** Here as the value one and two will be calculated based on the operator and
                         if the result contains the zero after decimal point will remove it.
                         And display the result to TextView
@@ -126,7 +125,6 @@ class MainActivity : AppCompatActivity() {
                         if (prefix.isNotEmpty()) { // If the prefix is not empty then we will append it with first value i.e one.
                             one = prefix + one
                         }
-
                         /** Here as the value one and two will be calculated based on the operator and
                         if the result contains the zero after decimal point will remove it.
                         And display the result to TextView
