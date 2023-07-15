@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /**
+    /*
      * Append +,-,*,/ operators to the TextView as per the Button.Text
      */
     fun onOperator(view: View) {
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    /**
+    /*
      * Calculate the output
      */
     fun onEqual(view: View) {
