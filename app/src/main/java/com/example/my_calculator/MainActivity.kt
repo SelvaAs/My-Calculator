@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         tvInput = findViewById(R.id.tvInput)
     }
-
     fun onDigit(view: View) {
         tvInput?.append((view as Button).text)
         lastNumeric = true
@@ -31,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         lastNumeric = false
         lastDot = false
     }
-
     /**
      * Append . to the TextView.
      */
@@ -44,7 +42,6 @@ class MainActivity : AppCompatActivity() {
             lastDot = true // Update the flag //burda aktif olmali o yuzden true
         }
     }
-
     /*
      * Append +,-,*,/ operators to the TextView as per the Button.Text
      */
@@ -69,8 +66,7 @@ class MainActivity : AppCompatActivity() {
             var tvValue = tvInput?.text.toString()
             var prefix = ""
             try {
-
-                // Here if the value starts with '-' then we will separate it and perform the calculation with value...
+   // Here if the value starts with '-' then we will separate it and perform the calculation with value...
                 if (tvValue.startsWith("-")) {
                     prefix = "-"
                     tvValue = tvValue.substring(1);
