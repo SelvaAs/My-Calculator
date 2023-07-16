@@ -53,7 +53,6 @@ class MainActivity : AppCompatActivity() {
                 lastDot = false    // Reset the DOT flag  //dot olmamali bu yuzden false
             }
         }
-
     }
 
     /*
@@ -71,7 +70,6 @@ class MainActivity : AppCompatActivity() {
                     prefix = "-"
                     tvValue = tvValue.substring(1);
                 }
-
                 // If the inputValue contains the Division operator
                 when {
                     tvValue.contains("/") -> {
@@ -148,6 +146,7 @@ class MainActivity : AppCompatActivity() {
                             removeZeroAfterDot((one.toDouble() + two.toDouble()).toString())
                     }
                 }
+                
             } catch (e: ArithmeticException) {
                 e.printStackTrace()
             }
@@ -172,7 +171,6 @@ class MainActivity : AppCompatActivity() {
      * It is used to check whether any of the operator is used or not.
      */
     private fun isOperatorAdded(value: String): Boolean {
-
         /**
          * Here first we will check that if the value starts with "-" then will ignore it.
          * As it is the result value and perform further calculation.
