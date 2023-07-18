@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             lastDot = true // Update the flag //burda aktif olmali o yuzden true
         }
     }
+    
     /*
      * Append +,-,*,/ operators to the TextView as per the Button.Text
      */
@@ -92,6 +93,7 @@ class MainActivity : AppCompatActivity() {
                         tvInput?.text =
                             removeZeroAfterDot((one.toDouble() / two.toDouble()).toString())
                     }
+                    
                     tvValue.contains("*") -> {
                         // If the inputValue contains the Multiplication operator
                         // Will split the inputValue using Multiplication operator
