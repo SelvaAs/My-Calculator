@@ -110,6 +110,7 @@ class MainActivity : AppCompatActivity() {
                         tvInput?.text =
                             removeZeroAfterDot((one.toDouble() * two.toDouble()).toString())
                     }
+                    
                     tvValue.contains("-") -> {
 
                         // If the inputValue contains the Subtraction operator
@@ -129,6 +130,7 @@ class MainActivity : AppCompatActivity() {
                         tvInput?.text =
                             removeZeroAfterDot((one.toDouble() - two.toDouble()).toString())
                     }
+                    
                     tvValue.contains("+") -> {
                         // If the inputValue contains the Addition operator
                         // Will split the inputValue using Addition operator
