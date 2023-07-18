@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     fun onDigit(view: View) {
         tvInput?.append((view as Button).text)
         lastNumeric = true
+        
     }
 
     fun onClear(view: View) {
@@ -65,11 +66,13 @@ class MainActivity : AppCompatActivity() {
             var tvValue = tvInput?.text.toString()
             var prefix = ""
             try {
+                
    // Here if the value starts with '-' then we will separate it and perform the calculation with value...
                 if (tvValue.startsWith("-")) {
                     prefix = "-"
                     tvValue = tvValue.substring(1);
                 }
+                
                 // If the inputValue contains the Division operator
                 when {
                     tvValue.contains("/") -> {
