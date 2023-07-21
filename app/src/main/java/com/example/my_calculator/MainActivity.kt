@@ -41,9 +41,9 @@ class MainActivity : AppCompatActivity() {
             lastDot = true // Update the flag //burda aktif olmali o yuzden true
         }
     }
-    
+ 
     /*
-     * Append +,-,*,/ operators to the TextView as per the Button.Text
+     Append +,-,*,/ operators to the TextView as per the Button.Text
      */
     fun onOperator(view: View) {
         tvInput?.text?.let {
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     /*
-     * Calculate the output
+     Calculate the output
      */
     fun onEqual(view: View) {
         // If the last input is a number only, solution can be found...
