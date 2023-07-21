@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
      * Append . to the TextView.
      */
     fun onDecimalPoint(view: View) {
-
         // If the last appended value is numeric then append(".") or don't.
         if (lastNumeric && !lastDot) {
             tvInput?.append(".")
@@ -108,7 +107,8 @@ class MainActivity : AppCompatActivity() {
                         And display the result to TextView
                          */
                         tvInput?.text =
-                            removeZeroAfterDot((one.toDouble() * two.toDouble()).toString())
+                
+                        removeZeroAfterDot((one.toDouble() * two.toDouble()).toString())
                     }
                     
                     tvValue.contains("-") -> {
@@ -128,7 +128,8 @@ class MainActivity : AppCompatActivity() {
                         And display the result to TextView
                          */
                         tvInput?.text =
-                            removeZeroAfterDot((one.toDouble() - two.toDouble()).toString())
+                    
+                        removeZeroAfterDot((one.toDouble() - two.toDouble()).toString())
                     }
                     
                     tvValue.contains("+") -> {
