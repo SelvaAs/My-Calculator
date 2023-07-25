@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
             lastDot = true // Update the flag //burda aktif olmali o yuzden true
         }
     }
- 
     /*
      Append +,-,*,/ operators to the TextView as per the Button.Text
      */
@@ -63,8 +62,7 @@ class MainActivity : AppCompatActivity() {
             // Read the textView value
             var tvValue = tvInput?.text.toString()
             var prefix = ""
-            try {
-                
+            try {            
    // Here if the value starts with '-' then we will separate it and perform the calculation with value...
                 if (tvValue.startsWith("-")) {
                     prefix = "-"
