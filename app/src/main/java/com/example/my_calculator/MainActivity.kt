@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                     prefix = "-"
                     tvValue = tvValue.substring(1);
                 }
-                
+            
                 // If the inputValue contains the Division operator
                 when {
                     tvValue.contains("/") -> {
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                         var one = splitedValue[0] // Value One
                         val two = splitedValue[1] // Value Two
 
-                        if (prefix.isNotEmpty()) { // If the prefix is not empty then we will append it with first value i.e one...
+                        if (prefix.isNotEmpty()) { // If the prefix is not empty then we will append it with first value i.e one.
                             one = prefix + one
                         }
 
