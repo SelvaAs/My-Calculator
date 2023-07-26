@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         lastNumeric = false
         lastDot = false
     }
+    
     /**
      * Append . to the TextView.
      */
