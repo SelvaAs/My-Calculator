@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
     /*
      Calculate the output
      */
