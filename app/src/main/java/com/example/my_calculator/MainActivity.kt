@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
                             one = prefix + one
                         }
 
-                        /*Here as the value one and two will be calculated based on the operator and
+                      /*Here as the value one and two will be calculated based on the operator and
                                 if the result contains the zero after decimal point will remove it.
                                 And display the result to TextView*/
                         tvInput?.text =
