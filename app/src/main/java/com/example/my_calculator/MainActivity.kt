@@ -11,7 +11,6 @@ class MainActivity : AppCompatActivity() {
     var lastNumeric: Boolean = false
     // If true, do not allow to add another DOT
     var lastDot: Boolean = false
-
     private var tvInput: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
